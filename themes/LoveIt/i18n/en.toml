@@ -1,0 +1,198 @@
+# Translations for English
+# https://gohugo.io/content-management/multilingual/#translation-of-strings
+
+# === baseof ==
+[backToTop]
+other = "Về đầu trang"
+
+[viewComments]
+other = "Xem bình luận"
+# === baseof ==
+
+# === Post ===
+[posts]
+other = "Bài viết"
+# === Post ===
+
+# === Taxonomy ===
+[allSome]
+other = "{{ .Some }} nè"
+
+[tag]
+other = "Thẻ"
+
+[tags]
+other = "Thẻ"
+
+[category]
+other = "Mục"
+
+[categories]
+other = "Mục"
+# === Taxonomy ===
+
+# === Pagination ===
+[more]
+other = "Thêm"
+# === Pagination ===
+
+# === partials/header.html ===
+[selectLanguage]
+other = "Chọn ngôn ngữ"
+
+[switchTheme]
+other = "Mode"
+# === partials/header.html ===
+
+# === partials/footer.html ===
+[poweredBySome]
+other = "Ò e" #{{ .Hugo }}
+# === partials/footer.html ===
+
+# === partials/comment.html ===
+[valineLang]
+other = "en"
+
+[valinePlaceholder]
+other = "Your comment ..."
+
+[facebookLanguageCode]
+other = "en_US"
+
+[giscusLang]
+other = "en"
+# === partials/comment.html ===
+
+# === partials/assets.html ===
+[search]
+other = "Tìm kiếm"
+
+[searchPlaceholder]
+other = "Tìm quài đéo thấy"
+
+[clear]
+other = "Clear"
+
+[cancel]
+other = "Hủy"
+
+[noResultsFound]
+other = "Không tìm thấy kết quả"
+
+[lunrLanguageCode]
+other = "en"
+
+[copyToClipboard]
+other = "Copy to clipboard"
+
+[cookieconsentMessage]
+other = "This website uses Cookies to improve your experience."
+
+[cookieconsentDismiss]
+other = "Hiểu gòi!"
+
+[cookieconsentLink]
+other = "Tìm hiểu thêm"
+# === partials/assets.html ===
+
+# === partials/plugin/share.html ===
+[shareOn]
+other = "Chia sẻ trên"
+# === partials/plugin/share.html ===
+
+# === posts/single.html ===
+[contents]
+other = "Nội dung"
+
+[publishedOnDate]
+other = "cập nhật vào 2022"
+
+[includedInCategories]
+other = "included in {{ .Categories }}"
+
+[wordCount]
+one = "One word"
+other = "{{ .Count }} từ"
+
+[readingTime]
+one = "Một phút"
+other = "{{ .Count }} phút"
+
+[views]
+other = "views"
+
+[author]
+other = "Author"
+
+[updatedOnDate]
+other = "Mo đờ phắc"
+
+[readMarkdown]
+other = "Read Markdown"
+
+[back]
+other = "Trở về"
+
+[home]
+other = "Trang chủ"
+
+[readMore]
+other = "Đọc thêm"
+# === posts/single.html ===
+
+# === 404.html ===
+[pageNotFound]
+other = "Page not found"
+
+[pageNotFoundText]
+other = "Chưa biết bỏ gì vô đây cả."
+# === 404.html ===
+
+# === shortcodes/admonition.html ===
+[note]
+other = "Chú ý"
+
+[abstract]
+other = "Abstract"
+
+[info]
+other = "Info"
+
+[tip]
+other = "Mẹo"
+
+[success]
+other = "Thành công"
+
+[question]
+other = "Câu hỏi"
+
+[warning]
+other = "Cảnh báo"
+
+[failure]
+other = "Thất bại"
+
+[danger]
+other = "Nguy hiểm"
+
+[bug]
+other = "Bug"
+
+[example]
+other = "Ví dụ"
+
+[quote]
+other = "Quote"
+# === shortcodes/admonition.html ===
+
+# === shortcodes/version.html ===
+[new]
+other = "NEW"
+
+[changed]
+other = "CHANGED"
+
+[deleted]
+other = "DELETED"
+# === shortcodes/version.html ===

@@ -1,0 +1,18 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'Dũng Học Giỏi'
+theme = 'LoveIt'
+#publishdir = "du4ng.github.io"
+[params]
+favicon = '/static/favicon.ico'
+
+[author]
+name = "Mấy thằng ml | Software Engineer"
+
+[languages.en.params.home.profile]
+enable = true
+avatarURL = "/avatar.png"
+title = "Ú"
+subtitle = 'òa'
+typeit = false
+social = true
