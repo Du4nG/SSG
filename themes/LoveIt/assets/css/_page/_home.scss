@@ -1,6 +1,6 @@
 .home {
   .home-profile {
-    @include transform(translateY( 16vh));
+    @include transform(translateY(16vh));
     padding: 0 0 .5rem;
     text-align: center;
 
@@ -30,8 +30,8 @@
     }
 
     .home-subtitle {
-      font-size: 0.7rem;
-      font-weight: normal ;
+      font-size: 0.8rem;
+      font-weight: normal;
       margin: 0;
       padding-bottom: .5rem;
     }
@@ -76,12 +76,12 @@
   }
 
   .summary {
-    
+
     padding-top: 1rem;
     padding-bottom: .8rem;
     color: $global-font-color;
     border-bottom: 1px dashed $global-border-color;
-    
+
 
     [theme=dark] & {
       color: $global-font-color-dark;
@@ -155,7 +155,8 @@
 
       @include link(false, true);
 
-      b, strong {
+      b,
+      strong {
         color: $global-font-secondary-color;
 
         [theme=dark] & {

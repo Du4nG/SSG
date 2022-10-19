@@ -59,41 +59,45 @@ Thêm như nào á ? Lên mạng mà coi. Sau khi thêm xong, hãy check thử v
 >>> hugo version
 ```
 \
-Nếu check thành công ta bắt đầu thôi nào.
+Nếu check thành công, vào việc.
 \
 \
 \
 ​
 ### 2.1 Tạo Project
-Bật VSCode và mở terminal, `cd` đến nơi mà bạn mong muốn, mình sẽ  gọi folder mà các bạn sắp tạo là root folder (folder gốc) :
+Mở VS Code, chúng ta sẽ tạo ra một folder qua lệnh dưới đây. Mình sẽ gọi nó là root folder (folder gốc) :
 ```cmd
 >>> hugo new site tên_muốn_đặt_cho_root_folder
 ```
 \
-Tại đây, một vài folder rỗng sẽ được tạo ra, ta sẽ lấp đầy chúng trong chốt lát thôi.
+Bên trong, một vài folder rỗng đồng thời cũng được tạo ra, ta sẽ lấp đầy chúng trong chốt lát thôi.
 \
 \
 \
 ​
 ### 2.2 Chọn Theme
 
-Đi chợ thôi, cứ việc chọn cho mình một theme tuỳ thích tại chợ 👉[**Kim Biên**](https://themes.gohugo.io/) nè.
+Đi chợ thôi, cứ việc chọn cho mình một theme tuỳ thích tại chợ [**Kim Biên**](https://themes.gohugo.io/) nè.
 \
 \
 Chẳng hạn, mình chọn theme Stack, các bạn có thể tham khảo theme này tại [**Sound Engineering**](https://kpnn.ml/) của Tank nhé.
 \
 \
 ![Stack trên HUGO Themes](demo.png "Stack trên Hugo Themes")
-Các bạn có thể nhấn vào **Demo** để xem thử theme, nếu ưng ý, chạy lệnh git sau trong VSCode tại root folder :
+Các bạn có thể nhấn vào **Demo** để xem thử theme, nếu ưng ý, chạy lệnh git sau tại root folder :
 
 ```cmd
 >>> cd themes
 >>> git clone https://github.com/CaiJimmy/hugo-theme-stack.git
 
+    git clone https://github.com/url_của_theme_trên_github.git  
 ```
 
 \
 Trường hợp xấu hơn, nếu mọi người không thể clone về được (như mình chẳng hạn 😶 do proxy công ty), hoặc thậm chí nếu bạn còn đéo biết dùng git, chỉ việc tải trực tiếp folder zip của theme đó qua nút **Download** trong hình.
+\
+\
+Nhưng, ai rồi cũng phải git thôi.
 \
 \
 \
@@ -109,11 +113,11 @@ Bạn sẽ chú ý đến một file gọi là file ⚙️config. Đây sẽ là
 File config tồn tại dưới 3 đuôi khác nhau gồm `.toml`, `.yaml` hoặc `.json` tuỳ vào sở thích của thằng cha tác giả, nhưng chung quy lại chúng chỉ khác nhau về cú pháp mà thôi.
 {{< /admonition >}}
 \
-Dưới đây là cấu trúc cơ bản của một file config.toml (*đã được mình lược bớt*) đối với một theme bất kỳ. Có thể bạn sẽ tìm thấy nhiều file config ở các subfolder, tuỳ vào nhu cầu hiển thị của bạn nên cứ vọc vạch đi nhá.
+Dưới đây là cấu trúc cơ bản của file config.toml bên trong folder **📁exampleSite** (*đã được mình lược bớt*). Tuỳ vào nhu cầu hiển thị của bạn nên cứ vọc vạch đi nhá.
 
 
 ```toml
-baseURL = "http://example.org/"
+baseURL = "https://example.org/"
 
 # Tên theme mà không giống folder theme thì nó không tìm được đâu
 theme = "tên_folder_theme"
@@ -164,21 +168,17 @@ languageName = "English"
 \
 ​
 ### 2.4 Khởi chạy trên local
-
-Gòi, coi thử mặt mũi nó như nào.
-\
-\
-Vẫn tại root folder, chạy lệnh :
+Ban nãy, khi bạn tạo ra các folder rỗng bên trong root folder, một file config cũng được tạo ra, nhớ thêm vào file này dòng `theme = 'tên_folder_theme'` nhé. Sau đó :
 ```cmd
 >>> hugo server
 ```
 \
-Truy cập vào `http://localhost:1313`.
+\
+Truy cập vào `localhost:1313`.
 \
 \
-Hmm
-\
-\
+Gòi, coi thử mặt mũi nó như nào.
+![Sao trống hoác thế](blank_site.png "Hmm, tại sao trông nó như bình địa vậy.")
 \
 \
 Để xem thử một website hoàn chỉnh, chúng ta sẽ ghé sang  **📁exampleSite** (một subfoler bên trong theme các bạn vừa clone về), chính là trang web mà mọi người thấy khi nhấn vào nút **Demo** ban nãy. Thử lại phát nào :
@@ -192,7 +192,7 @@ Và..
 
 
 
-![exampleSite của theme Stack](examplesite.png "Voilà! exampleSite của theme Stack")
+![exampleSite của theme Stack](example_site.png "Voilà! exampleSite của theme Stack")
 
 {{< admonition warning>}}
 Thông thường, với mỗi file `index.ngôn_ngữ.md` bên trong thư mục posts (tượng trưng cho từng bài viết trên web), sẽ có một dòng lệnh như thế này `draft: false`. Nếu giá trị của nó là `true`, nghĩa là post đó đang được lưu ở dạng nháp, nó sẽ không hiện lên web.
@@ -210,8 +210,8 @@ Bật 💾Auto Save để code tới đâu website sẽ refresh tới đó.
 \
 \
 ​
-**Đến đây thì các bạn đã tự mình ăn cắp, à không, mượn ý tưởng của một thằng nào đấy trên mạng. 
-Đến lúc biến nó thành của riêng mình rồi 👀!**
+**Đến đây thì các bạn đã tự mình ăn cắp, ý mình là, mượn thành công ý tưởng của một thằng nào đấy trên mạng. 
+Đến lúc biến nó thành của riêng mình rồi. 👀**
 \
 \
 \
@@ -233,7 +233,20 @@ Chui vào **📁content**, tạo vài subfolder và một file markdown :
 ```
 \
 \
+\
+\
+\
+\
+\
+\
+\
 Ơ mà khoan, markdown là gì cơ ?
+\
+\
+\
+\
+\
+\
 \
 \
 \
@@ -274,13 +287,12 @@ Blah...blah..NỘI DUNG...blah..blah...
 
 ```
 \
-\
 Đây chính là file chứa toàn bộ nội dung của một bài viết. Mỗi khi nhấn vào một bài viết bất kỳ trên [**Dũng Học Giỏi**](https://maythang.ml), tất cả content mà bạn đọc được khi lăn chuột, đều được mình thủ công viết dưới dạng :(fab fa-js fa-markdown): markdown, bao gồm cả table, hiệu ứng in đậm in nghiêng, các đề mục và cả đường link. 
 \
 \
 \
 ​
-### 3.3 Custom
+### 3.3 Custom theme
 Nếu bạn muốn trùng tu cho trang web của mình, bạn sẽ cần đến một chút kiến thức về `html` và `css`(`scss`) đấy nhé 🤓.
 Bên trong folder **📁themes** sẽ chứa một số subfolder quan trọng như :
 
@@ -290,11 +302,9 @@ Bên trong folder **📁themes** sẽ chứa một số subfolder quan trọng n
 |            |­­­:(fab fa-sass): SCSS |
 |            |­:(fab fa-js):      JS|
 | layouts    |:(fab fa-html5): HTML|
-| static     | font chữ            |
+| static     | font <br> chữ            |
 | i18n       | ngôn ngữ            |
 
-\
-\
 \
 \
 \
@@ -304,32 +314,6 @@ Thông thường, các mục của một trang web có thể thay đổi đượ
 \
 \
 Điều này có thể thực hiện bằng cách sử dụng các file `"ngôn_ngữ".toml` bên trong folder **i18n**.
-
-| Language             | Hugo Code | HTML `lang` Attribute | Theme Docs                    | Lunr.js Support               |
-|:-------------------- |:---------:|:---------------------:|:-----------------------------:|:-----------------------------:|
-| English              | `en`      | `en`                  | :(far fa-check-square fa-fw): | :(far fa-check-square fa-fw): |
-| Simplified Chinese   | `zh-cn`   | `zh-CN`               | :(far fa-check-square fa-fw): | :(far fa-check-square fa-fw): |
-| Traditional Chinese  | `zh-tw`   | `zh-TW`               | :(far fa-square fa-fw):       | :(far fa-check-square fa-fw): |
-| French               | `fr`      | `fr`                  | :(far fa-square fa-fw):       | :(far fa-check-square fa-fw): |
-| Polish               | `pl`      | `pl`                  | :(far fa-square fa-fw):       | :(far fa-square fa-fw):       |
-| Brazilian Portuguese | `pt-br`   | `pt-BR`               | :(far fa-square fa-fw):       | :(far fa-check-square fa-fw): |
-| Italian              | `it`      | `it`                  | :(far fa-square fa-fw):       | :(far fa-check-square fa-fw): |
-| Spanish              | `es`      | `es`                  | :(far fa-square fa-fw):       | :(far fa-check-square fa-fw): |
-| German               | `de`      | `de`                  | :(far fa-square fa-fw):       | :(far fa-check-square fa-fw): |
-| German               | `de`      | `de`                  | :(far fa-square fa-fw):       | :(far fa-check-square fa-fw): |
-| Serbian              | `sr`      | `sr`                  | :(far fa-square fa-fw):       | :(far fa-square fa-fw):       |
-| Russian              | `ru`      | `ru`                  | :(far fa-square fa-fw):       | :(far fa-check-square fa-fw): |
-| Romanian             | `ro`      | `ro`                  | :(far fa-square fa-fw):       | :(far fa-check-square fa-fw): |
-| Vietnamese           | `vi`      | `vi`                  | :(far fa-square fa-fw):       | :(far fa-check-square fa-fw): |
-| Arabic               | `ar`      | `ar`                  | :(far fa-square fa-fw):       | :(far fa-check-square fa-fw): |
-| Catalan              | `ca`      | `ca`                  | :(far fa-square fa-fw):       | :(far fa-square fa-fw):       |
-| Thai                 | `th`      | `th`                  | :(far fa-square fa-fw):       | :(far fa-check-square fa-fw): |
-| Telugu               | `te`      | `te`                  | :(far fa-square fa-fw):       | :(far fa-square fa-fw):       |
-| Indonesian           | `id`      | `id`                  | :(far fa-square fa-fw):       | :(far fa-square fa-fw):       |
-| Turkish              | `tr`      | `tr`                  | :(far fa-square fa-fw):       | :(far fa-check-square fa-fw): |
-| Korean               | `ko`      | `ko`                  | :(far fa-square fa-fw):       | :(far fa-square fa-fw):       |
-| Hindi                | `hi`      | `hi`                  | :(far fa-square fa-fw):       | :(far fa-square fa-fw):       |
-
 \
 \
 \
@@ -338,9 +322,6 @@ Thông thường, các mục của một trang web có thể thay đổi đượ
 ​
 ## 5. LÊN DĨA
 Sau khi ăn trộm và đạo nhái các kiểu, chúng ta sẽ đưa web lên server nhé.
-\
-\
-\
 ​
 ### 5.1 Đưa web lên server
 
@@ -363,7 +344,7 @@ Bước cuối cùng của công đoạn tiễn web lên thiên đàng, chúng t
 ```
 >>> cd public
 >>> git init
->>> git remote add origin https://github.com/tên_github_user/tên_repo_vừa_tạo.git
+>>> git remote add origin https://github.com/tên_user/tên_user.github.io.git
 >>> git add .
 >>> git commit -m "lên_thiên_đàng"
 >>> git push origin master
@@ -380,5 +361,4 @@ Tất cả file bên trong **📁public** lúc này đã được đẩy lên re
 ​
 ### 5.2 Lụm domain
 
-
-
+Chờ tẹo, mình chưa rõ khúc này nên chưa lùa gà được.

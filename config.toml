@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Dũng Học Giỏi'
 theme = 'LoveIt'
@@ -7,7 +7,7 @@ theme = 'LoveIt'
 favicon = '/static/favicon.ico'
 
 [author]
-name = "Mấy thằng ml | Software Engineer"
+name = "mấythằng.ml | Software Engineer"
 
 [languages.en.params.home.profile]
 enable = true
