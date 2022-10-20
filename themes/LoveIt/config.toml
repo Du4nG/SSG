@@ -57,7 +57,7 @@ weight = 3
 identifier = "categories"
 pre = ""
 post = ""
-name = "📁Mục"
+name = "📦Mục"
 url = "/categoriesssssss/"
 title = "trai"
 [[menu.main]]
@@ -155,7 +155,7 @@ noFavicon = false
 # modern SVG favicon to use in place of older style .png and .ico files
 svgFavicon = ""
 # Android browser theme color
-defaultTheme = "dark"
+defaultTheme = "light"
 # Safari mask icon color
 iconColor = "#5bbad5"
 # Windows v8-11 tile color
@@ -163,7 +163,7 @@ tileColor = "#da532c"
 
 # Search config
 [params.search]
-enable = true
+enable = false
 # type of search engine ["lunr", "algolia"]
 type = "algolia"
 # max index length of the chunked content

@@ -1,7 +1,7 @@
 ---
 weight: 1
 # title: "[HUGO] - Mình Đã Tự Tạo Một Trang Web Như Thế Nào"
-title: "Mình Có Một Thằng Mentor Hay Trốn Việc"
+title: "Tutorial | Mình có một thằng mentor hay trốn việc "
 
 date: 2022-10-12T22:29:01+08:00
 lastmod: 2022-10-12T22:29:01+08:00
@@ -15,7 +15,7 @@ resources:
 - name: "featured-image"
   src: "featured-image.png"
 
-tags: ["web"]
+tags: ["web","tut"]
 # categories: ["documentation"]
 
 lightgallery: true
@@ -34,7 +34,7 @@ Dành cho những ai không có kiến thức về web, trong đó có cả mìn
 <!--more-->
 ##  1. GIỚI THIỆU
 
-Một ngày đẹp trời, mình tình cờ vấp phải [**That IELTS Guide 🌱**](https://thatieltsguide.com/) của thầy Quang, một con web được thầy build phục vụ cho mục đích dạy tiếng Anh, làm mình nhớ lại quả ai-eo.com cũng của thầy khoảng ba năm trước, giờ thì chắc nó hẹo rồi.
+Một ngày đẹp trời, mình tình cờ vấp phải [**That IELTS Guide 🌱**](https://thatieltsguide.com/) của thầy Quang, một con web được thầy build phục vụ cho mục đích dạy tiếng Anh, làm mình nhớ lại quả ai-eo.com của thầy khoảng ba năm trước, giờ thì chắc nó hẹo rồi.
 \
 \
 Vì vậy hôm nay, mình quyết định all-in dogecoin, à nhầm, quyết định chia sẻ cho mọi người cách tạo một trang web cực kỳ đơn giản, chỉ cần có một chút xíu kiến thức về code là được.
@@ -83,7 +83,7 @@ Bên trong, một vài folder rỗng đồng thời cũng được tạo ra, ta 
 Chẳng hạn, mình chọn theme Stack, các bạn có thể tham khảo theme này tại [**Sound Engineering**](https://kpnn.ml/) của Tank nhé.
 \
 \
-![Stack trên HUGO Themes](demo.png "Stack trên Hugo Themes")
+![Stack trên HUGO Themes](demo.png "Stắc")
 Các bạn có thể nhấn vào **Demo** để xem thử theme, nếu ưng ý, chạy lệnh git sau tại root folder :
 
 ```cmd
@@ -97,14 +97,14 @@ Các bạn có thể nhấn vào **Demo** để xem thử theme, nếu ưng ý, 
 Trường hợp xấu hơn, nếu mọi người không thể clone về được (như mình chẳng hạn 😶 do proxy công ty), hoặc thậm chí nếu bạn còn đéo biết dùng git, chỉ việc tải trực tiếp folder zip của theme đó qua nút **Download** trong hình.
 \
 \
-Nhưng, ai rồi cũng phải git thôi.
+Ai rồi cũng phải git thôi.
 \
 \
 \
 ​
 ### 2.3 Cấu trúc cơ bản của một Theme {#basic-configuration}
 
-Một theme (chủ đề), bao gồm nhiều thứ như tone màu chủ đạo, menu, font chữ, bo góc,.. đồng điệu với nhau.  
+Một theme (chủ đề), bao gồm nhiều thứ như tone màu chủ đạo, menu, font chữ, bo góc,... đồng điệu với nhau.  
 \
 Bạn sẽ chú ý đến một file gọi là file ⚙️config. Đây sẽ là file dùng để chỉnh sửa nhanh những gì nổi bật nhất của một theme.
 \
@@ -302,7 +302,7 @@ Bên trong folder **📁themes** sẽ chứa một số subfolder quan trọng n
 |            |­­­:(fab fa-sass): SCSS |
 |            |­:(fab fa-js):      JS|
 | layouts    |:(fab fa-html5): HTML|
-| static     | font <br> chữ            |
+| static     | font chữ            |
 | i18n       | ngôn ngữ            |
 
 \
