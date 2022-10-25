@@ -1,7 +1,7 @@
 ---
 weight: 1
 # title: "[HUGO] - Mình Đã Tự Tạo Một Trang Web Như Thế Nào"
-title: "Tutorial | Mình có một thằng mentor hay trốn việc "
+title: "Mình có một thằng mentor hay trốn việc | Tutorial"
 
 date: 2022-10-12T22:29:01+08:00
 lastmod: 2022-10-12T22:29:01+08:00
@@ -29,6 +29,8 @@ Dành cho những ai không có kiến thức về web, trong đó có cả mìn
 \
 \
 \
+\
+\
 ​
 
 <!--more-->
@@ -37,10 +39,12 @@ Dành cho những ai không có kiến thức về web, trong đó có cả mìn
 Một ngày đẹp trời, mình tình cờ vấp phải [**That IELTS Guide 🌱**](https://thatieltsguide.com/) của thầy Quang, một con web được thầy build phục vụ cho mục đích dạy tiếng Anh, làm mình nhớ lại quả ai-eo.com của thầy khoảng ba năm trước, giờ thì chắc nó hẹo rồi.
 \
 \
-Vì vậy hôm nay, mình quyết định all-in dogecoin, à nhầm, quyết định chia sẻ cho mọi người cách tạo một trang web cực kỳ đơn giản, chỉ cần có một chút xíu kiến thức về code là được.
+Vì vậy hôm nay, mình quyết định all-in dogecoin, à nhầm, quyết định chia sẻ cho mọi người cách tạo một trang web cực kỳ đơn giản, chỉ cần một chút kiến thức về code là được.
 \
 \
 Tất nhiên chúng ta không build-from-scratch mà sẽ sử dụng những template có sẵn. Trong bài viết này, mình sẽ sử dụng framework Hugo. 
+\
+\
 \
 \
 \
@@ -51,7 +55,7 @@ Tất nhiên chúng ta không build-from-scratch mà sẽ sử dụng những te
 Trước tiên, tải bản release mới nhất của Hugo tại [**:(far fa-file-archive fa-fw):đây**](https://github.com/gohugoio/hugo/releases/).
 \
 \
-Sau khi giải nén, bạn sẽ nhận được một file hugo.exe. Thêm đường dẫn chứa file .exe vào PATH environment variables nhé.
+Sau khi giải nén, bạn sẽ nhận được một file hugo.exe. Thêm đường dẫn chứa file này vào PATH environment variables nhé.
 \
 \
 Thêm như nào á ? Lên mạng mà coi. Sau khi thêm xong, hãy check thử version của Hugo khi `cd` tại bất kỳ đâu trong terminal :
@@ -215,6 +219,10 @@ Bật 💾Auto Save để code tới đâu website sẽ refresh tới đó.
 \
 \
 \
+\
+\
+\
+\
 ​
 ## 3. TUỲ CHỈNH
 ### 3.1 Viết Blog thôi nào !
@@ -238,11 +246,7 @@ Chui vào **📁content**, tạo vài subfolder và một file markdown :
 \
 \
 \
-\
-\
 Ơ mà khoan, markdown là gì cơ ?
-\
-\
 \
 \
 \
@@ -293,7 +297,7 @@ Blah...blah..NỘI DUNG...blah..blah...
 \
 ​
 ### 3.3 Custom theme
-Nếu bạn muốn trùng tu cho trang web của mình, bạn sẽ cần đến một chút kiến thức về `html` và `css`(`scss`) đấy nhé 🤓.
+Nếu bạn muốn trùng tu cho trang web của mình, bạn sẽ cần đến một chút kiến thức về `css`(`scss`) đấy nhé 🤓.
 Bên trong folder **📁themes** sẽ chứa một số subfolder quan trọng như :
 
 |Folder      | Chứa các file       |
@@ -319,13 +323,17 @@ Thông thường, các mục của một trang web có thể thay đổi đượ
 \
 \
 \
+\
+\
 ​
-## 5. LÊN DĨA
+## 4. LÊN DĨA
 Sau khi ăn trộm và đạo nhái các kiểu, chúng ta sẽ đưa web lên server nhé.
+​\
+\
 ​
-### 5.1 Đưa web lên server
+### 4.1 Đưa web lên server
 
-Chúng ta sẽ cần một server để host trang web. Có khá nhiều lựa chọn như GitHub, GitLab, Netlify, Firebase,... Mình hay xem mèo đen nên mình chọn :(fab fa-github): GitHub nhé.
+Chúng ta sẽ cần một server để host trang web. Có khá nhiều lựa chọn như GitHub, GitLab, Netlify, Firebase,... Mình hay xem mèo đen nên đành chọn :(fab fa-github): GitHub vậy.
 \
 \
 GitHub cung cấp một tên miền miễn phí đối với mỗi user như sau :`tên_user.github.io`. Ta sẽ tạo một repo mới trên GitHub, đặt tên giống với tên miền trên. Ví dụ như [du4ng.github.io](https://github.com/Du4nG/du4ng.github.io).
@@ -336,7 +344,7 @@ GitHub cung cấp một tên miền miễn phí đối với mỗi user như sau
 >>> hugo
 ```
 \
-Folder **📁public** sẽ được tạo ra, đây sẽ là nơi chứa toàn bộ những gì sẽ hiển thị trên server, được generate từ những file từ một vài folder nhất định. Vì vậy, cấu trúc file sẽ khá khác với cấu trúc trên local.
+Folder **📁public** sẽ được tạo ra, đây sẽ là nơi chứa toàn bộ những gì sẽ hiển thị trên server, được generate từ một số folder nhất định. Vì vậy, cấu trúc file sẽ khá khác với cấu trúc trên local.
 \
 \
 Bước cuối cùng của công đoạn tiễn web lên thiên đàng, chúng ta sẽ push mọi thứ bên trong folder này lên trên repo vừa tạo.  
@@ -350,7 +358,7 @@ Bước cuối cùng của công đoạn tiễn web lên thiên đàng, chúng t
 >>> git push origin master
 ```
 \
-Tất cả file bên trong **📁public** lúc này đã được đẩy lên repo. 
+Tất cả file bên trong **📁public** lúc này đã được đẩy lên repo. Chờ vài phút, trang web của các bạn sẽ xuất hiện khi ta nhập `tên_user.github.io` vào thanh URL trên trình duyệt.
 
 
 
@@ -359,6 +367,71 @@ Tất cả file bên trong **📁public** lúc này đã được đẩy lên re
 \
 \
 ​
-### 5.2 Lụm domain
+### 4.2 Thay hình đổi dạng
+NHƯNG, dùng tên miền như vậy sẽ bị người khác đánh giá đấy. Hay ta thử thay tên đổi họ xem sao. Có rất nhiều đơn vị cung cấp tên miền uy tín như Namecheap, GoDaddy, BlueHost,... Các bạn có thể tham khảo các đuôi phổ biến sau :
+|Trả phí   | Đồ chùa      |
+| -------- | -----------  |
+| .com .dev. org .edu .vn .net |.tk .cf .gq .ga|
 
-Chờ tẹo, mình chưa rõ khúc này nên chưa lùa gà được.
+\
+Vì nhà mình nghèo, nên mình sẽ nhờ **Freenom** làm giả hộ chiếu. Chi tiết cách để tậu cho mình một tên miền qua Freenom, các bạn có thể tra Google vì mình gõ cũng hơi mỏi tay rồi.
+\
+\
+\
+\
+​
+Phew, tiếp tục thôi.
+\
+\
+\
+\
+​
+Lấy ví dụ về tên miền mà GitHub bố thí cho mình, ta thử truy vấn đến `du4ng.github.io` qua  [**DNS lookup**](https://toolbox.googleapps.com/apps/dig) của Google. Kết quả trả về như sau :
+
+![Bùm](a_record.png "Nhấn vào hình xem cho rõ")
+\
+Kết quả nhận được  là một bản ghi A (A Record) bao gồm bốn địa chỉ IP. Các địa chỉ này chính là IP của GitHub Pages, nơi mà trang web của các bạn đang được host. Mỗi lần các bạn gõ `tên_user.github.io` vào thanh URL của trình duyệt, tên miền này sẽ được phân giải thành một trong bốn IP trên, trỏ đến GitHub Pages của các bạn.
+
+\
+\
+Chúng ta sẽ làm một động tác, tương tự như nguyên lý ban nãy, dùng custom domain để trỏ đến bốn địa chỉ IP. Ta sẽ modify tên miền trên Freenom, tiến hành nhập bốn địa chỉ vào bốn dòng tương ứng tại cột Target :
+
+**185.199.108.153
+\
+185.199.109.153
+\
+185.199.110.153
+\
+185.199.111.153**
+
+![Cột Name không cần điền gì cả](freenom.png "Nhớ Save Changes")
+\
+\
+Tại repo, mò vào **⚙️Settings**, nhấn vào **Pages** :
+![Pèo](github_pages.png "Ban đầu ô Enfore HTTPS sẽ có màu xám")
+
+Sau khi nhấn Save, một file CNAME sẽ được tạo ngay trong repo, với nội dung chỉ vọn vẻn là tên miền custom.
+\
+\
+Tại ô **Enfore HTTPS** (khoảng 24h sau mới tích được) nên cứ chờ đi nhé. Thông thường, các đơn vị cung cấp tên miền miễn phí chỉ hỗ trợ HTTP, nên nếu bạn truy cập web từ Facebook thì có thể bị còng đầu đấy (*Fb có filter cho insecure sites*).
+\
+\
+Và thế là hết !!!
+\
+\
+\
+\
+\
+\
+\
+​
+## 5. KẾT
+\
+\
+\
+\
+\
+\
+​
+![Anh cũng đéo biết nữa](duy.png 'Than Huu Duy (MS/EEU11-PS)')
+Chúc các bạn thành công trên con đường trộm cắp của mình.

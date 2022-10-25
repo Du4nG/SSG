@@ -12,7 +12,7 @@ name = "mấythằng.ml | Software Engineer"
 [languages.en.params.home.profile]
 enable = true
 avatarURL = "/avatar.png"
-title = "Ú"
-subtitle = 'òa'
+title = "If the code works"
+subtitle = "DON'T touch it"
 typeit = false
 social = true
