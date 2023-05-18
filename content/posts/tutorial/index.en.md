@@ -1,7 +1,7 @@
 ---
 weight: 1
 # title: "[HUGO] - Mình Đã Tự Tạo Một Trang Web Như Thế Nào"
-title: "Mình có một thằng mentor hay trốn việc | Tutorial"
+title: "Static Site Generator  | Tutorial"
 
 date: 2022-10-12T22:29:01+08:00
 lastmod: 2022-10-12T22:29:01+08:00
@@ -59,7 +59,7 @@ Sau khi giải nén, bạn sẽ nhận được một file hugo.exe. Thêm đư�
 \
 \
 Thêm như nào á ? Lên mạng mà coi. Sau khi thêm xong, hãy check thử version của Hugo khi `cd` tại bất kỳ đâu trong terminal :
-```cmd
+```bash
 >>> hugo version
 ```
 \
@@ -70,7 +70,7 @@ Nếu check thành công, vào việc.
 ​
 ### 2.1 Tạo Project
 Mở VS Code, chúng ta sẽ tạo ra một folder qua lệnh dưới đây. Mình sẽ gọi nó là root folder (folder gốc) :
-```cmd
+```bash
 >>> hugo new site tên_muốn_đặt_cho_root_folder
 ```
 \
@@ -90,7 +90,7 @@ Chẳng hạn, mình chọn theme Stack, các bạn có thể tham khảo theme 
 ![Stack trên HUGO Themes](demo.png "Stắc")
 Các bạn có thể nhấn vào **Demo** để xem thử theme, nếu ưng ý, chạy lệnh git sau tại root folder :
 
-```cmd
+```bash
 >>> cd themes
 >>> git clone https://github.com/CaiJimmy/hugo-theme-stack.git
 
@@ -186,7 +186,7 @@ Gòi, coi thử mặt mũi nó như nào.
 \
 \
 Để xem thử một website hoàn chỉnh, chúng ta sẽ ghé sang  **📁exampleSite** (một subfoler bên trong theme các bạn vừa clone về), chính là trang web mà mọi người thấy khi nhấn vào nút **Demo** ban nãy. Thử lại phát nào :
-```cmd
+```bash
 >>> cd themes\tên_theme\exampleSite
 >>> hugo server
 ```
@@ -203,7 +203,7 @@ Thông thường, với mỗi file `index.ngôn_ngữ.md` bên trong thư mục 
 {{< /admonition >}}
 \
 Do đó, nếu cảm thấy một vài post sủi mất, ta có thể nắm đầu chúng bằng cách gõ lệnh dưới đây :
-```cmd
+```bash
 hugo server -D
 ```
 \
@@ -227,13 +227,13 @@ Bật 💾Auto Save để code tới đâu website sẽ refresh tới đó.
 ## 3. TUỲ CHỈNH
 ### 3.1 Viết Blog thôi nào !
 Trông thì cũng đẹp đấy, nhưng nếu chúng ta muốn viết content cho riêng mình thì phải làm thế nào ? Hiện tại ta đang ở **📁exampleSite**, quay về root folder bằng cách `cd` lùi lại 3 folder :
-```cmd
+```bash
 >>> cd ../../../
 ```
 \
 \
 Chui vào **📁content**, tạo vài subfolder và một file markdown :
-```cmd
+```bash
 >>> cd content
 >>> mkdir posts
 >>> mkdir tên_blog_muốn_đặt
@@ -329,7 +329,6 @@ Thông thường, các mục của một trang web có thể thay đổi đượ
 ## 4. LÊN DĨA
 Sau khi ăn trộm và đạo nhái các kiểu, chúng ta sẽ đưa web lên server nhé.
 ​\
-\
 ​
 ### 4.1 Đưa web lên server
 
@@ -340,7 +339,7 @@ GitHub cung cấp một tên miền miễn phí đối với mỗi user như sau
 \
 \
 ​Tại root folder, gõ :
-```cmd
+```bash
 >>> hugo
 ```
 \
@@ -349,7 +348,7 @@ Folder **📁public** sẽ được tạo ra, đây sẽ là nơi chứa toàn b
 \
 Bước cuối cùng của công đoạn tiễn web lên thiên đàng, chúng ta sẽ push mọi thứ bên trong folder này lên trên repo vừa tạo.  
 
-```
+```bash
 >>> cd public
 >>> git init
 >>> git remote add origin https://github.com/tên_user/tên_user.github.io.git
@@ -408,16 +407,15 @@ Chúng ta sẽ làm một động tác, tương tự như nguyên lý ban nãy, 
 \
 \
 Tại repo, mò vào **⚙️Settings**, nhấn vào **Pages** :
-![Pèo](github_pages.png "Ban đầu ô Enfore HTTPS sẽ có màu xám")
+![Pèo](github_pages.png "Ban đầu ô Enforce HTTPS sẽ có màu xám")
 
 Sau khi nhấn Save, một file CNAME sẽ được tạo ngay trong repo, với nội dung chỉ vọn vẻn là tên miền custom.
 \
 \
-Tại ô **Enfore HTTPS** (khoảng 24h sau mới tích được) nên cứ chờ đi nhé. Thông thường, các đơn vị cung cấp tên miền miễn phí chỉ hỗ trợ HTTP, nên nếu bạn truy cập web từ Facebook thì có thể bị còng đầu đấy (*Fb có filter cho insecure sites*).
+Tại ô **Enforce HTTPS** (khoảng 24h sau mới tích được) nên cứ chờ đi nhé. Thông thường, các đơn vị cung cấp tên miền miễn phí chỉ hỗ trợ HTTP, nên nếu bạn truy cập web từ Facebook thì có thể bị còng đầu đấy (Facebook có filter cho insecure sites).
 \
 \
 Và thế là hết !!!
-\
 \
 \
 \
@@ -431,7 +429,7 @@ Và thế là hết !!!
 \
 \
 \
-\
 ​
-![Anh cũng đéo biết nữa](duy.png 'Than Huu Duy (MS/EEU11-PS)')
+Tương truyền rằng, Nguyen Dang Quang còn học thêm thêm cả JavaScript, dùng GPT để lôi API về build thêm các site khác phục vụ cho mục đích dạy IELTS của thầy.
+
 Chúc các bạn thành công trên con đường trộm cắp của mình.

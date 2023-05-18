@@ -26,7 +26,6 @@ toc:
 \
 \
 \
-Dạo một vòng nhé 
 \
 [**livin/room**](https://beacons.ai/livin/room)
 
